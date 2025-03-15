@@ -7,7 +7,6 @@ export PYBUILD_NAME=tempora
 
 export PYBUILD_BEFORE_TEST=cp -va {dir}/pytest.ini {dir}/tests {build_dir}/
 export PYBUILD_AFTER_TEST=rm -rf {build_dir}/pytest.ini {build_dir}/tests
-export PYBUILD_TEST_ARGS=-k 'not tempora.get_nearest_year_for_day'
 
 %:
 	dh $@ --with python3 --buildsystem=pybuild --test-pytest

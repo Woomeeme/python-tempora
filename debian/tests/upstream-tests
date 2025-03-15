@@ -15,5 +15,5 @@ for py in $(py3versions -s 2>/dev/null); do
 	$py -m pytest tests
 	cd /usr/lib/python3/dist-packages/tempora
 	echo "Running doctests with $py:"
-	$py -m pytest --doctest-modules . -k 'not tempora.get_nearest_year_for_day'
+	$py -m pytest --doctest-modules .
 done

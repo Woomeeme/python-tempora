@@ -1,3 +1,31 @@
+v5.7.0
+======
+
+Features
+--------
+
+- Add a tzinfos mapping and parse method for easy datetime parsing with timezone support.
+
+
+v5.6.0
+======
+
+Features
+--------
+
+- Removed dependency on pytz. (#29)
+- In utc.now(), bind late to allow for monkeypatching. (#31)
+
+
+v5.5.1
+======
+
+Bugfixes
+--------
+
+- Remove test dependency on backports.unittest_mock. (#26)
+
+
 v5.5.0
 ======
 

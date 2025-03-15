@@ -1,3 +1,31 @@
+python-tempora (5.7.0-2) unstable; urgency=medium
+
+  * Control, rules, tests: add (build-)dep on python3-pytest-freezegun
+    and re-enable full testsuite.
+
+ -- Jeroen Ploemen <jcfp@debian.org>  Tue, 20 Aug 2024 05:20:08 +0000
+
+python-tempora (5.7.0-1) unstable; urgency=medium
+
+  * New upstream version 5.7.0
+  * Control: remove build-dep on python3-tz, no longer needed.
+  * Rules, tests: also exclude tempora.utc test for using not-packaged-
+    yet pytest.freezer.
+  * Patches: add 01 to unbreak the autopkgtest by not bothering with
+    python 3.8 compatibility.
+
+ -- Jeroen Ploemen <jcfp@debian.org>  Sun, 18 Aug 2024 07:44:49 +0000
+
+python-tempora (5.5.1-1) unstable; urgency=medium
+
+  * New upstream version 5.5.1
+  * Control: remove team from uploaders.
+  * Control: point VCS links to private namespace.
+  * Control: bump Standards-Version to 4.7.0 (from 4.6.2).
+  * Copyright: bump years for upstream and packaging.
+
+ -- Jeroen Ploemen <jcfp@debian.org>  Sat, 25 May 2024 12:30:39 +0000
+
 python-tempora (5.5.0-1) unstable; urgency=medium
 
   * New upstream version 5.5.0
